@@ -154,6 +154,7 @@ def event_handle(event,json_line):
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "เเนะนำเพลงหน่อย" :  
             replyObj = TextSendMessage(text="https://youtu.be/N2dsnGc7TFk")
+            replyObj = TextSendMessage(text="https://youtu.be/ZJaKdBBzUYk")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "เเนะนำช่องเรียนฟิสิกส์" :
             replyObj = TextSendMessage(text="https://youtube.com/c/PhysicsBlueprint")
