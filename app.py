@@ -155,8 +155,8 @@ def event_handle(event,json_line):
         elif msg == "เเนะนำเพลงหน่อย" :  
             replyObj = TextSendMessage(text="https://youtu.be/N2dsnGc7TFk")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เเนะนำเพลงหน่อย" :
-            replyObj = TextSendMessage(text="https://youtu.be/ZJaKdBBzUYk")
+        elif msg == "เพลงฮิต" :
+            replyObj = TextSendMessage(text="https://youtu.be/MNHN_BxkfYU")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "เเนะนำช่องเรียนคณิต" :
             replyObj = TextSendMessage(text="https://youtube.com/c/Smartmathpro")
