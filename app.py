@@ -159,10 +159,7 @@ def event_handle(event,json_line):
             replyObj = TextSendMessage(text="https://youtube.com/c/PhysicsBlueprint")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "เเนะนำภาพยนตร์" :
-            url = "เรื่อง one for the road "
-            response = requests.get(url)
-            response = response.json()
-            replyObj = TextSendMessage(text=str(response))
+            url = "เรื่อง one for the road"
             line_bot_api.reply_message(rtoken, replyObj)
         else :       
             headers = request.headers
