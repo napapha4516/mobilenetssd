@@ -152,14 +152,14 @@ def event_handle(event,json_line):
         if msg == "สวัสดี" :
             replyObj = TextSendMessage(text="ดีจ้าาาา")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "กินข้าวไหม" :  
-            replyObj = TextSendMessage(text="กินด้วย")
+        elif msg == "เเนะนำเพลงหน่อย" :  
+            replyObj = TextSendMessage(text="https://youtu.be/N2dsnGc7TFk")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "ไปเที่ยวกันป่าว" :
-            replyObj = TextSendMessage(text="ไปดิ")
+        elif msg == "เเนะนำช่องเรียนฟิสิกส์" :
+            replyObj = TextSendMessage(text="https://youtube.com/c/PhysicsBlueprint")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "covid" :
-            url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-all"
+        elif msg == "เเนะนำภาพยนตร์" :
+            url = "เรื่อง one for the road "
             response = requests.get(url)
             response = response.json()
             replyObj = TextSendMessage(text=str(response))
