@@ -155,17 +155,20 @@ def event_handle(event,json_line):
         elif msg == "เเนะนำเพลงหน่อย" :  
             replyObj = TextSendMessage(text="https://youtu.be/N2dsnGc7TFk")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เพลงฮิต" :
-            replyObj = TextSendMessage(text="https://youtu.be/MNHN_BxkfYU")
+        elif msg == "เพลงอ่านหนังสือ" :
+            replyObj = TextSendMessage(text="https://youtu.be/mYVlAJsJuoA")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เเนะนำช่องเรียนคณิต" :
-            replyObj = TextSendMessage(text="https://youtube.com/c/Smartmathpro")
+        elif msg == "เเนะนำช่องเรียน คณิต ไทย อังกฤษ" :
+            replyObj = TextSendMessage(text="https://youtube.com/c/NockAcademyth")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "เเนะนำช่องเรียนฟิสิกส์" :
             replyObj = TextSendMessage(text="https://youtube.com/c/PhysicsBlueprint")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เเนะนำภาพยนตร์" :
-            replyObj = TextSendMessage(text="เรื่อง one for the road")
+        elif msg == "เพลย์ลิสต์เพลง" :
+            replyObj = TextSendMessage(text="https://m.youtube.com/watch?v=4CYAA95Olko&feature=youtu.be")
+            line_bot_api.reply_message(rtoken, replyObj)
+        elif msg == "เเนะนำช่องเรียนเคมี" :
+            replyObj = TextSendMessage(text="https://youtube.com/channel/UC1NVIjalyZhB2hqf3sl9GMA")
             line_bot_api.reply_message(rtoken, replyObj)
         else :       
             headers = request.headers
